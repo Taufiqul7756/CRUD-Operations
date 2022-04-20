@@ -12,11 +12,14 @@ function App() {
       <UserProvider>
         <Router>
           <Switch>
+            <Route path="/home">
+              <Home />
+            </Route>
             <Route path="/remove/:id">
               <Remove></Remove>
             </Route>
             <Route exact path="/">
-              <Home></Home>
+              <Home />
             </Route>
           </Switch>
         </Router>
